@@ -1,0 +1,35 @@
+---
+// src/pages/index.astro
+---
+
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Baustelle</title>
+		<style>
+			body {
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background-color: #ffffff;
+			}
+			.sign-container {
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sign-container">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<!-- Warning Triangle -->
+				<path fill="#FFD700" d="M256 32L32 432h448L256 32z"/>
+				<!-- Exclamation Mark -->
+				<path fill="#000" d="M256 160c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm0 192c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24z"/>
+			</svg>
+		</div>
+	</body>
+</html>
